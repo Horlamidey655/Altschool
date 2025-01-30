@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  gap: 5rem;
+  background: rgb(34, 34, 232);
+}
+.btn {
+  padding: 2.4rem 3.2rem;
+  border-radius: 5vw;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  background: rgb(0, 0, 120);
+  font-size: 2.4rem;
+  transition: all 0.3s ease-in-out;
+  border: 3px solid transparent;
+  &:hover {
+    background: transparent;
+    border: 3px solid rgb(0, 0, 120);
+  }
+}

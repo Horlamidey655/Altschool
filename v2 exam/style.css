@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: Gilroy-Medium;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(20, 20, 20, 1);
+  font-size: 1.8rem;
+}
+
+.header {
+  padding: 1.2rem 14.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  figure {
+    transform: translateY(6px);
+  }
+}
+.nav-links {
+  display: flex;
+  gap: 4rem;
+  padding: 0 1rem;
+}
+.nav-link {
+  text-transform: capitalize;
+  &.active {
+    text-transform: uppercase;
+    color: rgba(0, 101, 254, 1);
+  }
+}
+.cta {
+  display: flex;
+  gap: 2.4rem;
+  padding: 1.2rem 0;
+  align-items: center;
+  a {
+    font-family: Gilroy-SemiBold;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: rgba(0, 101, 254, 1);
+  }
+  .try-for-free {
+    background: rgba(0, 101, 254, 1);
+    padding: 1.2rem 2.4rem;
+    border-radius: 100vw;
+    color: white;
+  }
+}

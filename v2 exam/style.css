@@ -26,8 +26,18 @@ a {
   font-size: 1.8rem;
 }
 
-.header {
+.label {
+  color: #005ae2;
+  text-transform: capitalize;
+}
+
+.hero {
   padding: 1.2rem 14.5rem;
+  /* background: #eac81f;
+  backdrop-filter: blur(700px); */
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +54,9 @@ a {
   text-transform: capitalize;
   &.active {
     text-transform: uppercase;
-    color: rgba(0, 101, 254, 1);
+    a {
+      color: rgba(0, 101, 254, 1);
+    }
   }
 }
 .cta {
@@ -63,5 +75,54 @@ a {
     padding: 1.2rem 2.4rem;
     border-radius: 100vw;
     color: white;
+  }
+}
+.hero-body {
+  width: 60%;
+  padding-top: 10.6rem;
+  margin-inline: auto;
+}
+.hero-content {
+  display: grid;
+  gap: 0.8rem;
+  p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: medium;
+    text-align: center;
+    width: 70%;
+    margin-inline: auto;
+  }
+}
+.hero-content_heading {
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 1.5rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 6rem;
+    height: 0.5rem;
+    background: #005ae2;
+    transform: rotate(-7deg);
+  }
+}
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+  gap: 5.6rem;
+  .sign-up {
+    padding: 1.6rem 4.25rem;
+    background: #005ae2;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 100vw;
   }
 }

@@ -10,14 +10,17 @@ html {
   font-size: 10px;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+body {
+  display: grid;
+  place-content: center;
   height: 100vh;
   gap: 5rem;
-  background: rgb(34, 34, 232);
+  background: rgba(249, 251, 253, 1);
+  justify-items: center;
+}
+.main {
+  display: flex;
+  gap: 2rem;
 }
 .btn {
   padding: 2.4rem 3.2rem;
@@ -25,12 +28,13 @@ html {
   text-decoration: none;
   text-transform: capitalize;
   color: white;
-  background: rgb(0, 0, 120);
-  font-size: 2.4rem;
+  background: rgb(86, 86, 255);
+  font-size: 2rem;
   transition: all 0.3s ease-in-out;
   border: 3px solid transparent;
   &:hover {
+    color: rgb(86, 86, 255);
     background: transparent;
-    border: 3px solid rgb(0, 0, 120);
+    border: 3px solid rgb(86, 86, 255);
   }
 }
